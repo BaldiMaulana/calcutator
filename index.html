@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="w-full flex justify-center items-center mt-2">
+        <div class="grid justify-center items-center gap-4">
+            <h1 class="text-center text-gray-200 text-5xl" id="animated-text" style="font-size: 50px;"></h1>
+            <div class="grid-col-1 text-3xl border-4 border-black rounded-xl shadow-lg p-4">
+            <input type="text" id="display" class="p-3 w-[300px] bg-gray-200 text-end rounded-xl" disabled/>
+            <div class="flex justify-center gap-2 mt-3">
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('7')">7</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('8')">8</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('9')">9</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('+')">+</button>
+            </div>
+            <div class="flex justify-center gap-2 mt-2">
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('4')">4</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('5')">5</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('6')">6</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('-')">-</button>
+            </div>
+            <div class="flex justify-center gap-2 mt-2">
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('1')">1</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('2')">2</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('3')">3</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('*')">*</button>
+            </div>
+            <div class="flex justify-center gap-2 mt-2">
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('0')">0</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px] " onclick="display('.')">.</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="displayHasil('=')">=</button>
+                <button class="bg-gray-200 p-5 rounded-xl w-[70px]" onclick="display('/')">/</button>
+            </div>
+            <div class="flex">
+                <button class="bg-gray-200 p-5 rounded-xl mt-2 w-[70px]" onclick="displayClear()">C</button>
+                <a class="flex justify-center items-center ml-4 gap-4" href="https://github.com/BaldiMaulana" target="_blank">
+                    <i class="fa-brands fa-github" style="font-size: 50px;"></i>
+                </a>
+                <a class="flex justify-center items-center ml-4 gap-4" href="https://www.linkedin.com/in/muhammad-baldi-maulana-099a5328a/" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="font-size: 50px;"></i>
+                </a>
+                <p class="flex justify-center items-center ml-4 gap-4 italic">BAMA</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
